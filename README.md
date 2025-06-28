@@ -1,7 +1,7 @@
 # 🔥 SIMPLE_RAY - Tek Komut Kurulum
 
 ```bash
-git clone https://github.com/specialzs/SIMPLE_RAY.git && cd SIMPLE_RAY && chmod +x SIMPLE_RAY && sudo ./SIMPLE_RAY.sh && cd .. && rm -rf SIMPLE_RAY
+git clone https://github.com/specialzs/SIMPLE_RAY.git && cd SIMPLE_RAY && chmod +x SIMPLE_RAY.sh && sudo bash SIMPLE_RAY.sh && cd .. && rm -rf SIMPLE_RAY
 
 ```
 
