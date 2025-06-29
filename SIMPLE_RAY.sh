@@ -46,6 +46,9 @@ install_xray() {
         -subj "/CN=$IP" \
         -keyout /etc/xray/cert/key.pem \
         -out /etc/xray/cert/cert.pem > /dev/null 2>&1
+        chmod 600 /etc/xray/cert/key.pem
+        chmod 644 /etc/xray/cert/cert.pem
+        chown -R nobody:nogroup /etc/xray/cert
 
     cat > /usr/local/etc/xray/config.json <<EOF
 {
