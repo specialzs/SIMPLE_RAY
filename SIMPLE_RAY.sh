@@ -40,7 +40,7 @@ install_xray() {
     bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ install > /dev/null 2>&1
 
     IP=$(curl -4 ifconfig.co 2>/dev/null || hostname -I | awk '{print $1}')
-    UUID=$(uuidgen)
+    UUID="fckfavor-$(uuidgen | cut -c 1-2)"
     mkdir -p /etc/xray/cert
     openssl req -new -newkey rsa:2048 -days 365 -nodes -x509 \
         -subj "/CN=$IP" \
